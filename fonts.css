@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'PTSansPro-CondLight';
+  src: url('fonts/PTSansPro-CondLight/PTSansPro-CondLight.eot');
+  src: url('fonts/PTSansPro-CondLight/PTSansPro-CondLight.woff2') format('woff2'),
+       url('fonts/PTSansPro-CondLight/PTSansPro-CondLight.woff') format('woff'),
+       url('fonts/PTSansPro-CondLight/PTSansPro-CondLight.ttf') format('truetype'),
+       url('fonts/PTSansPro-CondLight/PTSansPro-CondLight.svg#PTSansPro-CondLight') format('svg'),
+       url('fonts/PTSansPro-CondLight/PTSansPro-CondLight.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoSansW1G-Light';
+    src: url('fonts/NeoSansW1G-Light/NeoSansW1G-Light.eot');
+    src: url('fonts/NeoSansW1G-Light/NeoSansW1G-Light.woff2') format('woff2'),
+    url('fonts/NeoSansW1G-Light/NeoSansW1G-Light.woff') format('woff'),
+    url('fonts/NeoSansW1G-Light/NeoSansW1G-Light.ttf') format('truetype'),
+    url('fonts/NeoSansW1G-Light/NeoSansW1G-Light.svg#NeoSansW1G-Light') format('svg'),
+    url('fonts/NeoSansW1G-Light/NeoSansW1G-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
