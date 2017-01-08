@@ -60,16 +60,39 @@ body > header .header-right nav.aside .avatar, body > header nav.aside .hamburge
     padding-bottom: 3px;
 }
 
+body > .contacts, body > .feedback
+{
+    background-color: #fefefe;
+    font-family: 'NeoSansW1G-Light', "Open Sans", Helvetica, sans-serif;
+}
+
 body > .contacts
 {
-    background-color: #ffffff;
-    font-family: 'NeoSansW1G-Light', "Open Sans", Helvetica, sans-serif;
     text-align: center;
 }
 
 body > .contacts > article
 {
     display: inline-block;
+}
+
+body > .contacts > article address
+{
+    font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
+    color: #3b3a3a;
+}
+
+body > .contacts > article h2
+{
+    color: #b3a488;
+}
+
+body > .contacts > article time
+{
+    display: block;
+    font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
+    color: #b3a488;
+    text-transform: uppercase;
 }
 
 body > .social
@@ -97,6 +120,64 @@ body > .social article a > label
     display: block;
 }
 
+body > .feedback h2
+{
+    text-align: center;
+}
+
+body > .feedback form
+{
+    margin: 0 auto;
+}
+
+body > .feedback form fieldset
+{
+    float: left;
+}
+
+body > footer
+{
+    background-color: #bdb098;
+    color: #444240;
+}
+
+body > footer > .footer
+{
+    margin: 0 auto;
+}
+
+body > footer small, body > footer .bottom-menu nav li a
+{
+    text-transform: uppercase;
+}
+
+body > footer .copyright, body > footer .bottom-menu
+{
+    float: left;
+}
+
+body > footer .social
+{
+    float: right;
+}
+
+body > footer .bottom-menu nav li
+{
+    float: left;
+}
+
+body > footer .bottom-menu nav li a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+body > footer .social h3
+{
+    font-family: 'NeoSansW1G-Light', "Open Sans", Helvetica, sans-serif;
+    text-align: center;
+}
+
 .orange
 {
     color: #e9bb61;
@@ -112,6 +193,51 @@ body > .social article a > label
     height: 34px;
 }
 
+input, textarea, button
+{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+input, textarea
+{
+    border: 1px solid #e1d1b4;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+textarea
+{
+    resize: none;
+    font-size: 18px;
+    height: 100%;
+    padding: 7px 17px;
+}
+
+button
+{
+    background-color: #fefefe;
+    border: 2px solid #e9c162;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #8e8e8e;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #8e8e8e;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #8e8e8e;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #8e8e8e;
+}
+
 @media all and (min-width: 993px)
 {
     body > header
@@ -120,16 +246,20 @@ body > .social article a > label
         font-size: 18px;
     }
 
-    body > header > .header, body > .game-menu > nav > ul
+    body > header > .header, body > .game-menu > nav > ul, body > footer > .footer
     {
-        max-width: 980px;
+        max-width: 954px;
+    }
+
+    body > header .logo, body > footer .logo
+    {
+        height: 37px;
+        float: left;
     }
 
     body > header .logo
     {
         margin-top: 8px;
-        height: 37px;
-        float: left;
     }
 
     body > header nav.main
@@ -274,14 +404,11 @@ body > .social article a > label
     body > .contacts > article h2
     {
         font-size: 24px;
-        color: #b3a488;
         margin-bottom: 14px;
     }
 
     body > .contacts > article address
     {
-        font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
-        color: #3b3a3a;
         font-size: 24px;
     }
 
@@ -292,12 +419,8 @@ body > .social article a > label
 
     body > .contacts > article time
     {
-        display: block;
-        font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
-        color: #b3a488;
         font-size: 17px;
         margin-top: 5px;
-        text-transform: uppercase;
     }
 
     body > .social
@@ -327,6 +450,125 @@ body > .social article a > label
         margin-top: 18px;
         font-size: 23px;
     }
+
+    body > .feedback
+    {
+        min-height: 325px;
+    }
+
+    body > .feedback h2
+    {
+        font-size: 23px;
+        line-height: 29px;
+        margin-top: 102px;
+    }
+
+    body > .feedback form
+    {
+        max-width: 664px;
+    }
+
+    body > .feedback form fieldset
+    {
+        height: 145px;
+        margin: 29px 0 0 19px;
+        width: 306px;
+    }
+
+    body > .feedback form textarea
+    {
+        height: 100%;
+    }
+
+    body > .feedback form textarea
+    {
+        font-size: 18px;
+        padding: 7px 16px;
+    }
+
+    body > .feedback form input
+    {
+        height: 37px;
+        font-size: 18px;
+        padding: 3px 9px 0;
+        margin-bottom: 10px;
+    }
+
+    body > .feedback form button
+    {
+        font-size: 20px;
+        height: 44px;
+        margin-top: 17px;
+        padding-top: 5px;
+    }
+
+    body > footer
+    {
+        min-height: 126px;
+    }
+
+    body > footer .social
+    {
+        min-width: 160px;
+        margin-right: 8px;
+    }
+
+    body > footer .logo
+    {
+        margin: 29px 0 13px;
+    }
+
+    body > footer small
+    {
+        clear: both;
+        display: block;
+        font-size: 13px;
+    }
+
+    body > footer .bottom-menu
+    {
+        margin-left: 25px;
+    }
+
+    body > footer .bottom-menu nav
+    {
+        margin-top: 45px;
+    }
+
+
+    body > footer .bottom-menu nav ul li
+    {
+        font-size: 16px;
+    }
+
+    body > footer .bottom-menu nav ul li + li
+    {
+        margin-left: 19px;
+    }
+
+    body > footer .social h3
+    {
+        font-size: 16px;
+        margin-top: 21px;
+    }
+
+    body > footer .social nav
+    {
+        display: block;
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    body > footer .social nav ul li
+    {
+        display: inline-block;
+    }
+
+    body > footer .social nav ul li + li
+    {
+        margin-left: 19px;
+    }
+
 
     .hidden-lg
     {
@@ -429,14 +671,11 @@ body > .social article a > label
     body > .contacts > article h2
     {
         font-size: 29px;
-        color: #b3a488;
         margin-bottom: 16px;
     }
 
     body > .contacts > article address
     {
-        font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
-        color: #3b3a3a;
         font-size: 29px;
     }
 
@@ -447,12 +686,151 @@ body > .social article a > label
 
     body > .contacts > article time
     {
-        display: block;
-        font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
-        color: #b3a488;
         font-size: 25px;
         margin-top: 15px;
-        text-transform: uppercase;
+    }
+
+    body > .social
+    {
+        min-height: 354px;
+    }
+
+    body > .social h2
+    {
+        font-size: 36px;
+        margin: 80px auto 54px;
+    }
+
+    body > .social article .social-icon
+    {
+        max-width: 38px;
+        max-height: 38px;
+    }
+
+    body > .social article + article
+    {
+        margin-left: 138px;
+    }
+
+    body > .social article label
+    {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    body > .feedback
+    {
+        min-height: 461px;
+    }
+
+    body > .feedback h2
+    {
+        font-size: 34px;
+        line-height: 38px;
+        margin-top: 152px;
+    }
+
+    body > .feedback form
+    {
+        max-width: 916px;
+        padding: 0 6px;
+    }
+
+    body > .feedback form fieldset
+    {
+        height: 209px;
+        margin-top: 45px;
+        max-width: 438px;
+        width: 100%;
+    }
+
+    body > .feedback form fieldset + fieldset
+    {
+        margin-left: 30px;
+    }
+
+    body > .feedback form textarea
+    {
+        height: 100%;
+    }
+
+    body > .feedback form textarea
+    {
+        font-size: 28px;
+        padding: 7px 22px;
+    }
+
+    body > .feedback form input
+    {
+        font-size: 28px;
+        height: 53px;
+        margin-bottom: 14px;
+        padding: 3px 15px 0;
+    }
+
+    body > .feedback form button
+    {
+        font-size: 30px;
+        height: 66px;
+        margin-top: 22px;
+        padding-top: 5px;
+        border-radius: 14px;
+    }
+
+    body > footer
+    {
+        min-height: 79px;
+    }
+
+    body > footer .social
+    {
+        min-width: 160px;
+        margin-right: 7px;
+    }
+
+    body > footer .logo
+    {
+        display: none;
+    }
+
+    body > footer small
+    {
+        display: block;
+        font-size: 26px;
+        margin-left: 8px;
+        margin-top: 37px;
+    }
+
+    body > footer .bottom-menu
+    {
+        display: none;
+    }
+
+    body > footer .social h3
+    {
+        display: none;
+    }
+
+    body > footer .social nav
+    {
+        display: block;
+        margin-top: 19px;
+        text-align: center;
+    }
+
+    body > footer .social nav ul li
+    {
+        display: inline-block;
+    }
+
+    body > footer .social nav img
+    {
+        width: 35px;
+    }
+
+    body > footer .social nav ul li + li
+    {
+        margin-left: 26px;
     }
 
     .hidden-md
@@ -528,6 +906,11 @@ body > .social article a > label
         vertical-align: top;
     }
 
+    body > .contacts > article + article
+    {
+        margin-left: 59px;
+    }
+
     body > .contacts > article .phone-icon
     {
         display: block;
@@ -544,14 +927,11 @@ body > .social article a > label
     body > .contacts > article h2
     {
         font-size: 44px;
-        color: #b3a488;
         margin-bottom: 22px;
     }
 
     body > .contacts > article address
     {
-        font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
-        color: #3b3a3a;
         font-size: 42px;
     }
 
@@ -562,12 +942,157 @@ body > .social article a > label
 
     body > .contacts > article time
     {
-        display: block;
-        font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
-        color: #b3a488;
         font-size: 35px;
         margin-top: 20px;
-        text-transform: uppercase;
+    }
+
+    body > .social
+    {
+        min-height: 431px;
+    }
+
+    body > .social h2
+    {
+        font-size: 44px;
+        margin: 90px auto 80px;
+    }
+
+    body > .social article .social-icon
+    {
+        max-width: 46px;
+        max-height: 46px;
+    }
+
+    body > .social article + article
+    {
+        margin-left: 59px;
+    }
+
+    body > .social article label
+    {
+        margin-top: 17px;
+        font-size: 44px;
+    }
+
+    body > .feedback
+    {
+        min-height: 917px;
+    }
+
+    body > .feedback h2
+    {
+        font-size: 46px;
+        line-height: 55px;
+        margin-top: 54px;
+    }
+
+    body > .feedback form
+    {
+        padding: 0 19px;
+    }
+
+    body > .feedback form fieldset
+    {
+        height: 235px;
+        margin-top: 44px;
+        width: 100%;
+    }
+
+    body > .feedback form fieldset + fieldset
+    {
+        margin-top: 32px;
+    }
+
+    body > .feedback form textarea
+    {
+        height: 100%;
+    }
+
+    body > .feedback form textarea
+    {
+        font-size: 44px;
+        padding: 12px 23px;
+    }
+
+    body > .feedback form input
+    {
+        font-size: 40px;
+        height: 74px;
+        margin-bottom: 24px;
+        padding: 4px 16px 0;
+    }
+
+    body > .feedback form button
+    {
+        border-radius: 10px;
+        border-width: 4px;
+        display: block;
+        font-size: 38px;
+        height: 86px;
+        margin: 52px auto 0;
+        padding-top: 7px;
+        max-width: 365px;
+    }
+
+    input, textarea
+    {
+        border-width: 2px;
+    }
+
+    body > footer
+    {
+        min-height: 72px;
+    }
+
+    body > footer .social
+    {
+        min-width: 160px;
+        margin-right: 21px;
+    }
+
+    body > footer .logo
+    {
+        display: none;
+    }
+
+    body > footer small
+    {
+        display: block;
+        font-size: 33px;
+        margin-left: 21px;
+        margin-top: 25px;
+    }
+
+    body > footer .bottom-menu
+    {
+        display: none;
+    }
+
+    body > footer .social h3
+    {
+        display: none;
+    }
+
+    body > footer .social nav
+    {
+        display: block;
+        margin-top: 19px;
+        text-align: center;
+    }
+
+    body > footer .social nav ul li
+    {
+        display: inline-block;
+    }
+
+    body > footer .social nav img
+    {
+        width: 33px;
+    }
+
+    body > footer .social nav ul li + li
+    {
+        margin-left: 22px;
     }
 
     .hidden-sm
@@ -680,14 +1205,11 @@ body > .social article a > label
     body > .contacts > article h2
     {
         font-size: 19px;
-        color: #b3a488;
         margin-bottom: 10px;
     }
 
     body > .contacts > article address
     {
-        font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
-        color: #3b3a3a;
         font-size: 20px;
     }
 
@@ -698,12 +1220,149 @@ body > .social article a > label
 
     body > .contacts > article time
     {
-        display: block;
-        font-family: 'PTSansPro-CondLight', 'Open Sans', Helvetica, sans-serif;
-        color: #b3a488;
         font-size: 15px;
         margin-top: 10px;
-        text-transform: uppercase;
+    }
+
+    body > .social
+    {
+        min-height: 202px;
+    }
+
+    body > .social h2
+    {
+        font-size: 20.5px;
+        margin: 43px auto 36px;
+    }
+
+    body > .social article .social-icon
+    {
+        max-width: 22px;
+        max-height: 22px;
+    }
+
+    body > .social article + article
+    {
+        margin-left: 20px;
+    }
+
+    body > .social article label
+    {
+        margin-top: 7px;
+        font-size: 20px;
+    }
+
+    body > .feedback
+    {
+        min-height: 392px;
+    }
+
+    body > .feedback h2
+    {
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 38px;
+    }
+
+    body > .feedback form
+    {
+        padding: 0 11px;
+    }
+
+    body > .feedback form fieldset
+    {
+        height: 98px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    body > .feedback form fieldset + fieldset
+    {
+        margin-top: 13px;
+    }
+
+    body > .feedback form textarea
+    {
+        height: 100%;
+    }
+
+    body > .feedback form textarea
+    {
+        font-size: 18px;
+        padding: 5px 9px;
+    }
+
+    body > .feedback form input
+    {
+        font-size: 18px;
+        height: 31px;
+        margin-bottom: 10px;
+        padding: 4px 7px 0;
+    }
+
+    body > .feedback form button
+    {
+        display: block;
+        font-size: 18px;
+        height: 36px;
+        margin: 22px auto 0;
+        max-width: 152px;
+        padding-top: 4px;
+    }
+
+    body > footer
+    {
+        min-height: 30px;
+    }
+
+    body > footer .social
+    {
+        margin-right: 9px;
+    }
+
+    body > footer .logo
+    {
+        display: none;
+    }
+
+    body > footer small
+    {
+        display: block;
+        font-size: 14px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    body > footer .bottom-menu
+    {
+        display: none;
+    }
+
+    body > footer .social h3
+    {
+        display: none;
+    }
+
+    body > footer .social nav
+    {
+        display: block;
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    body > footer .social nav ul li
+    {
+        display: inline-block;
+    }
+
+    body > footer .social nav img
+    {
+        width: 14px;
+    }
+
+    body > footer .social nav ul li + li
+    {
+        margin-left: 7px;
     }
 
     .hidden-xs
