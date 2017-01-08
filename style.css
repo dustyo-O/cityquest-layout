@@ -26,6 +26,7 @@ body > header time
     font-size: smaller;
     display: inline-block;
     color: #b3a488;
+    text-transform: uppercase;
 }
 
 body > header address.phone
@@ -248,7 +249,7 @@ button
 
     body > header > .header, body > .game-menu > nav > ul, body > footer > .footer
     {
-        max-width: 954px;
+        max-width: 960px;
     }
 
     body > header .logo, body > footer .logo
@@ -259,13 +260,14 @@ button
 
     body > header .logo
     {
+        margin-left: 4px;
         margin-top: 8px;
     }
 
     body > header nav.main
     {
-        margin-top: 22px;
-        margin-left: 81px;
+        margin-left: 80px;
+        margin-top: 23px;
     }
 
     body > header .header-right
@@ -280,7 +282,7 @@ button
 
     body > header nav.main > ul > li + li
     {
-        margin-left: 40px;
+        margin-left: 37px;
     }
 
     body > header a:hover
@@ -310,7 +312,7 @@ button
 
     body > header nav.aside
     {
-        margin-left: 43px;
+        margin-left: 40px;
     }
 
     body > header nav.aside a
@@ -326,7 +328,8 @@ button
 
     body > header time
     {
-        margin-left: 40px;
+        font-size: 12px;
+        margin-left: 37px;
     }
 
     body > .game-menu, body > .game-menu ul
@@ -335,10 +338,25 @@ button
         height: 47px;
     }
 
+    body > .game-menu
+    {
+        background-color: #f2eadc;
+        display: block;
+        width: 100%;
+    }
+
+    body > .game-menu ul
+    {
+        display: block;
+        margin: 0 auto;
+        max-width: 960px;
+        padding-left: 12px;
+    }
+
     body > .game-menu ul > li
     {
         display: inline-block;
-        width: 158px;
+        width: 156px;
         height: 47px;
         border-left: 1px solid #e1d1b4;
         line-height: 47px;
@@ -352,10 +370,12 @@ button
     body > .game-menu ul > li a
     {
         color: #756c5b;
-        font-size: 13px;
         display: block;
-        text-align: center;
+        font-size: 17px;
         height: 47px;
+        padding-left: 2px;
+        padding-top: 2px;
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
     }
@@ -374,7 +394,10 @@ button
 
     body > .contacts > article + article
     {
-        margin-left: 23px;
+        left: -20px;
+        margin-left: 19px;
+        margin-top: 102px;
+        position: relative;
     }
 
     body > .contacts > article .phone-icon
@@ -409,12 +432,12 @@ button
 
     body > .contacts > article address
     {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     body > .contacts > article address + address
     {
-        margin-top: 2px;
+        margin-top: 6px;
     }
 
     body > .contacts > article time
@@ -458,7 +481,7 @@ button
 
     body > .feedback h2
     {
-        font-size: 23px;
+        font-size: 24px;
         line-height: 29px;
         margin-top: 102px;
     }
@@ -515,14 +538,15 @@ button
 
     body > footer .logo
     {
-        margin: 29px 0 13px;
+        margin: 29px 0 15px 4px
     }
 
     body > footer small
     {
         clear: both;
         display: block;
-        font-size: 13px;
+        font-size: 12px;
+        margin-left: 4px;
     }
 
     body > footer .bottom-menu
@@ -532,6 +556,7 @@ button
 
     body > footer .bottom-menu nav
     {
+        margin-left: 5px;
         margin-top: 45px;
     }
 
@@ -543,7 +568,7 @@ button
 
     body > footer .bottom-menu nav ul li + li
     {
-        margin-left: 19px;
+        margin-left: 18px;
     }
 
     body > footer .social h3
@@ -584,15 +609,15 @@ button
         font-size: 20px;
     }
 
-    body > header > .header
+    body > header > .header, body > footer > .footer
     {
-        max-width: 904px;
+        max-width: 900px;
     }
 
     body > header .logo
     {
+        height: 52px;
         margin-top: 10px;
-        height: 54px;
     }
 
     body > header .ask-question, body > header nav.main
@@ -602,22 +627,31 @@ button
 
     body > header .header-right
     {
-        margin-top: 26px;
+        margin-top: 28px;
     }
 
-    body > header address
+    body > header address.phone
     {
         margin-left: 17px;
+        font-size: 29px;
     }
 
     body > header .header-right nav
     {
-        margin-left: 109px;
+        margin-left: 107px;
+        font-size: 29px;
     }
+
 
     body > header .header-right nav.aside ul li + li
     {
-        margin-left: 45px;
+        margin-left: 38px;
+    }
+
+    body > header .header-right nav.aside .avatar
+    {
+        margin-right: 4px;
+        margin-top: -5px;
     }
 
     body > header .header-right nav.aside .hamburger
@@ -639,8 +673,11 @@ button
     body > .contacts > article
     {
         margin-top: 80px;
-        min-width: 374px;
         vertical-align: top;
+    }
+
+    body > .contacts > article + article {
+        margin-left: 212px;
     }
 
     body > .contacts > article .phone-icon
@@ -692,7 +729,7 @@ button
 
     body > .social
     {
-        min-height: 354px;
+        min-height: 358px;
     }
 
     body > .social h2
@@ -709,25 +746,25 @@ button
 
     body > .social article + article
     {
-        margin-left: 138px;
+        margin-left: 143px;
     }
 
     body > .social article label
     {
-        margin-top: 30px;
+        margin-top: 3px;
         font-size: 30px;
     }
 
     body > .feedback
     {
-        min-height: 461px;
+        min-height: 465px;
     }
 
     body > .feedback h2
     {
-        font-size: 34px;
-        line-height: 38px;
-        margin-top: 152px;
+        font-size: 35px;
+        line-height: 42px;
+        margin-top: 144px;
     }
 
     body > .feedback form
@@ -739,9 +776,9 @@ button
     body > .feedback form fieldset
     {
         height: 209px;
-        margin-top: 45px;
+        margin-top: 41px;
         max-width: 438px;
-        width: 100%;
+        width: calc(50% - 30px);
     }
 
     body > .feedback form fieldset + fieldset
@@ -797,7 +834,7 @@ button
     {
         display: block;
         font-size: 26px;
-        margin-left: 8px;
+        margin-left: -1px;
         margin-top: 37px;
     }
 
@@ -816,6 +853,7 @@ button
         display: block;
         margin-top: 19px;
         text-align: center;
+        margin-right: -20px;
     }
 
     body > footer .social nav ul li
@@ -830,7 +868,7 @@ button
 
     body > footer .social nav ul li + li
     {
-        margin-left: 26px;
+        margin-left: 24px;
     }
 
     .hidden-md
@@ -850,7 +888,7 @@ button
 
     body > header > .header
     {
-        max-width: 719px;
+        max-width: 712px;
     }
 
     body > header .logo
@@ -860,7 +898,8 @@ button
 
     body > header .header-right
     {
-        margin-top: 28px;
+        margin-top: 26px;
+        margin-right: -4px;
     }
 
     body > header .ask-question, body > header nav.main
@@ -874,19 +913,39 @@ button
         margin-bottom: 3px;
     }
 
+    body > header .account-bulbs
+    {
+        font-size: 39px;
+    }
+
+    body > header time
+    {
+        font-size: 28px;
+    }
+
     body > header address
     {
-        margin-left: 16px;
+        margin-left: 10px;
+        font-size: 34px;
     }
 
     body > header .header-right nav
     {
-        margin-left: 34px;
+        margin-left: 30px;
     }
 
     body > header .header-right nav.aside ul li + li
     {
-        margin-left: 45px;
+        margin-left: 42px;
+        margin-right: 5px;
+    }
+
+    body > header .header-right nav.aside .avatar
+    {
+        height: 57px;
+        margin-right: 11px;
+        margin-top: -17px;
+        padding-bottom: 0;
     }
 
     body > .game-menu
@@ -902,13 +961,15 @@ button
     body > .contacts > article
     {
         margin-top: 100px;
-        min-width: 272px;
         vertical-align: top;
     }
 
     body > .contacts > article + article
     {
-        margin-left: 59px;
+        left: 37px;
+        margin-left: 69px;
+        position: relative;
+        top: 3px;
     }
 
     body > .contacts > article .phone-icon
@@ -932,7 +993,7 @@ button
 
     body > .contacts > article address
     {
-        font-size: 42px;
+        font-size: 44px;
     }
 
     body > .contacts > article address + address
@@ -963,10 +1024,16 @@ button
         max-height: 46px;
     }
 
+    body > .social article:first-child
+    {
+        margin-left: 40px;
+    }
+
     body > .social article + article
     {
         margin-left: 59px;
     }
+
 
     body > .social article label
     {
@@ -988,13 +1055,13 @@ button
 
     body > .feedback form
     {
-        padding: 0 19px;
+        padding: 0 23px;
     }
 
     body > .feedback form fieldset
     {
         height: 235px;
-        margin-top: 44px;
+        margin-top: 46px;
         width: 100%;
     }
 
@@ -1010,13 +1077,13 @@ button
 
     body > .feedback form textarea
     {
-        font-size: 44px;
+        font-size: 42px;
         padding: 12px 23px;
     }
 
     body > .feedback form input
     {
-        font-size: 40px;
+        font-size: 42px;
         height: 74px;
         margin-bottom: 24px;
         padding: 4px 16px 0;
@@ -1047,7 +1114,7 @@ button
     body > footer .social
     {
         min-width: 160px;
-        margin-right: 21px;
+        margin-right: 18px;
     }
 
     body > footer .logo
@@ -1059,7 +1126,7 @@ button
     {
         display: block;
         font-size: 33px;
-        margin-left: 21px;
+        margin-left: 25px;
         margin-top: 25px;
     }
 
@@ -1116,18 +1183,24 @@ button
 
     body > header .logo
     {
-        margin-top: 3px;
-        height: 25px;
+        height: 26px;
+        margin-left: 1px;
+        margin-top: 4px;
     }
 
     body > header .header-right
     {
-        margin-top: 7px;
+        margin-top: 9px;
     }
 
     body > header .ask-question, body > header nav.main
     {
         display: none;
+    }
+
+    body > header .account-bulbs
+    {
+        margin-left: 3px;
     }
 
     body > header .bulb
@@ -1150,9 +1223,15 @@ button
         height: 13px;
     }
 
-    body > header .header-right nav, body > header address
+    body > header address
     {
-        margin-left: 9px;
+        margin-left: 8px;
+        font-size: 14px;
+    }
+
+    body > header .header-right nav
+    {
+        margin-left: 6px;
     }
 
     body > header .header-right nav.aside ul li + li
